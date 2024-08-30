@@ -22,9 +22,9 @@ public class Article {
     }
 
     public void setSubject (String modifysubject) {
-        this.subject = subject;
+        this.subject = modifysubject;
     }
     public void setContent (String modifycontent) {
-        this.content = content;
+        this.content = modifycontent;
     }
 }

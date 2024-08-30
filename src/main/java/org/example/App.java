@@ -87,7 +87,7 @@ public class App {
                     System.out.printf("내용(기존) : %s\n", article.getContent());
                     System.out.print("내용 : ");
                     String modifycontent = sc.nextLine();
-                    article.setSubject(modifycontent);
+                    article.setContent(modifycontent);
 
                     System.out.printf("%d번 게시물이 수정되었습니다.\n", idx);
                 }
