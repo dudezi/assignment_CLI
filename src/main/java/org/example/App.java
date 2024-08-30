@@ -1,9 +1,12 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
     Scanner sc;
+    List<Article> articleList = new ArrayList<>();
 
     App (Scanner sc) {
         this.sc = sc;
@@ -24,9 +27,13 @@ public class App {
                 String subject = sc.nextLine();
                 System.out.print("내용 : ");
                 String content = sc.nextLine();
+                Article article = new Article(lastId, subject, content);
+                articleList.add(article);
 
                 System.out.printf("%d번 게시글이 등록되었습니다.\n", lastId);
                 lastId++;
+            } else if (command.trim().equals("목록")) {
+                
             }
         }
     }
